@@ -1,0 +1,252 @@
+.container {
+  width: 232px;
+  height: 174px;
+  background-color: #fff;
+  border: 1px solid #F0F0F0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 12px 20px 5px 27px;
+  position: relative;
+
+  .balls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .ballOne, .ballTwo, .ballThree, .ballFour {
+      cursor: pointer;
+      width: 9px;
+      height: 9px;
+      background: #06967B;
+      border-radius: 50%;
+
+      &.active {
+        background: transparent;
+        border: 1px solid #06967B;
+      }
+    }
+  }
+
+  .arrowRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid #06967B;
+    color: #06967B;
+    border-radius: 50%;
+  }
+
+  .card1 {
+    width: 100%;
+    height: 100%;
+    // display: none;
+
+    .title {
+      h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #0E6696;
+      }
+  
+      p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #0E6696;
+      }
+    }
+  
+    .images {
+      img {
+        width:  40px;
+        height: 40px;
+      }
+    }
+  
+    .descriptions {
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C4C4C4;
+      }
+    }
+  }
+
+  .card2 {
+    width: 100%;
+    height: 100%;
+    // display: none;
+
+    .titleCard2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      color: #0E6696;
+    }
+
+    .descriptionCard2 {
+      width: 100%;
+      height: 80px;
+      overflow-y: auto;
+      
+      .scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+
+        div {
+          width: 95%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #7B7B7B;
+
+            & + p {
+              margin-right: 5%;
+            }
+          }
+
+          & + div {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .card3 {
+    width: 100%;
+    height: 100%;
+    // display: none;
+
+    .titleCard3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      color: #0E6696;
+    }
+
+    .descriptionCard3 {
+      width: 100%;
+      height: 80px;
+      overflow-y: auto;
+      
+      .scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+
+        div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #7B7B7B;
+
+            & + p {
+              margin-right: 2%;
+            }
+          }
+
+          & + div {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .card4 {
+    width: 100%;
+    height: 100%;
+    // display: none;
+
+    .titleCard4 {
+      h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #0E6696;
+      }
+
+      p {
+        color: #0E66968A;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: .2rem;
+      }
+    }
+
+    .descriptionCard4 {
+      width: 60%;
+      height: 80px;
+      margin: 0 auto;
+      overflow-y: auto;
+      
+      .scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #7B7B7B;
+
+          & + p {
+            margin-top: 10px;
+          }
+
+          &.teste {
+            position: relative;
+          }
+
+          &.view {
+            position: absolute;
+            left: 10rem;
+            top: 3rem;
+            width: 161px;
+            height: 26px;
+            background: #FFF9C7;
+          }
+        }
+      }
+    }
+  }
+}
