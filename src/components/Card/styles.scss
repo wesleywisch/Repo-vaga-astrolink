@@ -1,10 +1,10 @@
 .container {
-  width: 232px;
-  height: 174px;
+  width: 14.5rem;
+  height: 10.875rem;
   background-color: #fff;
   border: 1px solid #F0F0F0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 12px 20px 5px 27px;
+  padding: .75rem 1.25rem .3125rem 1.6875rem;
   position: relative;
 
   .balls {
@@ -42,169 +42,116 @@
     border: 1px solid #06967B;
     color: #06967B;
     border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .titleCard {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    color: #0E6696;
+  }
+
+  .descriptionCard {
+    width: 100%;
+    height: 5rem;
+    overflow-y: auto;
+    
+    .scroll {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: auto;
+
+      div {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.3125rem;
+          color: #7B7B7B;
+
+          & + p {
+            margin-right: 5%;
+          }
+        }
+
+        & + div {
+          margin-top: 0.625rem;
+        }
+      }
+    }
   }
 
   .card1 {
     width: 100%;
     height: 100%;
-    // display: none;
 
     .title {
       h3 {
         font-weight: 700;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
         color: #0E6696;
       }
   
       p {
         font-weight: 700;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
         color: #0E6696;
       }
     }
   
     .images {
       img {
-        width:  40px;
-        height: 40px;
+        width:  2.5rem;
+        height: 2.5rem;
       }
     }
   
     .descriptions {
       p {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
         color: #C4C4C4;
       }
     }
   }
 
-  .card2 {
+  .card2, .card3 {
     width: 100%;
     height: 100%;
-    // display: none;
-
-    .titleCard2 {
-      text-align: center;
-      margin-bottom: 1rem;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 20px;
-      color: #0E6696;
-    }
-
-    .descriptionCard2 {
-      width: 100%;
-      height: 80px;
-      overflow-y: auto;
-      
-      .scroll {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow-y: auto;
-
-        div {
-          width: 95%;
-          height: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          p {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 21px;
-            color: #7B7B7B;
-
-            & + p {
-              margin-right: 5%;
-            }
-          }
-
-          & + div {
-            margin-top: 10px;
-          }
-        }
-      }
-    }
-  }
-
-  .card3 {
-    width: 100%;
-    height: 100%;
-    // display: none;
-
-    .titleCard3 {
-      text-align: center;
-      margin-bottom: 1rem;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 20px;
-      color: #0E6696;
-    }
-
-    .descriptionCard3 {
-      width: 100%;
-      height: 80px;
-      overflow-y: auto;
-      
-      .scroll {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow-y: auto;
-
-        div {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          p {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 21px;
-            color: #7B7B7B;
-
-            & + p {
-              margin-right: 2%;
-            }
-          }
-
-          & + div {
-            margin-top: 10px;
-          }
-        }
-      }
-    }
   }
 
   .card4 {
     width: 100%;
     height: 100%;
-    // display: none;
+    position: relative;
 
     .titleCard4 {
       h3 {
         text-align: center;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
         color: #0E6696;
       }
 
       p {
         color: #0E66968A;
         font-weight: 400;
-        font-size: 10px;
-        line-height: 20px;
+        font-size: 0.625rem;
+        line-height: 1.25rem;
         text-align: center;
         margin-bottom: .2rem;
       }
@@ -212,38 +159,47 @@
 
     .descriptionCard4 {
       width: 60%;
-      height: 80px;
+      height: 5rem;
       margin: 0 auto;
-      overflow-y: auto;
       
       .scroll {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        width: 100%;
+        height: 100%;
         overflow-y: auto;
 
-        p {
+
+        .tooltip {
+          display: inline-block;
           font-weight: 400;
-          font-size: 14px;
-          line-height: 21px;
+          font-size: 0.875rem;
+          line-height: 1.3125rem;
           color: #7B7B7B;
 
           & + p {
-            margin-top: 10px;
+            margin-top: 0.625rem;
           }
 
-          &.teste {
-            position: relative;
-          }
-
-          &.view {
-            position: absolute;
-            left: 10rem;
-            top: 3rem;
+          .tooltipText {
+            visibility: hidden;
             width: 161px;
             height: 26px;
-            background: #FFF9C7;
+            background-color: #FFF9C7;
+            color: #000;
+            font-weight: 400;
+            font-size: 8px;
+            text-align: center;
+            padding: .2rem;
+            position: absolute;
+            z-index: 1;
+            margin-left: .5rem;
+          }
+
+          &:hover .tooltipText {
+            visibility: visible;
           }
         }
       }
